@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body class="body">
+    <header class="header">
+            <img class="header__div__logo" src="./assets/images/logo Netflix1.png" alt="Logo Netflix"> <!-- LOGO -->
+
+
+        <ul class="header__ul">
+             <a href=""><li class="header__ul__text">Inicio</li></a>
+             <a href=""><li class="header__ul__text">Series</li></a>
+             <a href=""><li class="header__ul__text">Peliculas</li></a>
+             <a href=""><li class="header__ul__text">Novedades Populares</li></a>
+             <a href=""><li class="header__ul__text">Mi lista</li></a>
+             <a href=""><li class="header__ul__text">Explora por idiomas</li></a>
+        </ul>
+        
+        <div class="header__div__usuario">
+            <a href=""><img class="header__div__usuario__icono" src="./assets/images/Icono Lupa.png" alt=""></a>
+            <a href=""><h5 class="header__div__usuario__h5">Niños</h5></a>
+            <a href=""><img class="header__div__usuario__icono" src="./assets/images/Icono Campana.png" alt=""></a>
+            <a href=""><img class="header__div__usuario__icono--avatar" src="./assets/images/Icono Usuario.png" alt=""></a>
+        </div> <!-- MENU -->
+
+    </header>
+
+    <main class="main">
+                <section class="main__section__filtropeliculas">
+                    <h3 class="main__section__h3">Peliculas</h3>
+                           
+                    <div class="main__section__divh4">
+                
+                        <label for="toggleCheckbox" class="main__section__div2h4">
+                    <!-- CONTENEDOR GENEROS -->
+                            <h4 class="main__section__h4">Generos</h4>
+                            <img class="main__section__h4-img"src="./assets/images/Icono - Despliegue Menor.png" alt="">
+                        </label>
+                    </div>
+
+                        <input type="checkbox" id="toggleCheckbox" style="display: none;">
+                        <ul  class="main__section__divh4__listado">
+                            <li>Accion</li>
+                            <li>Anime</li>
+                            <li>Cine de Intriga</li>
+                            <li>Clasicas</li>
+                            <li>Cortos</li>
+                            <li>De Argentina</li>
+                            <li>De Hollywood</li>
+                            <li>Deportes</li>
+                            <li>Documentales</li>
+                            <li>Drama</li>
+                            <li>Fantasia</li>
+                            <li>Fe y Espiritualidad</li>
+                            <li>Independientes</li>
+                            <li>Internacionales</li>
+                            <li>Los Favoritos de la critica</li>
+                            <li>Musica y Musicales</li>
+                            <li>Para ver en Familia</li>
+                            <li>Peliculas en Español</li>
+                            <li>Peliculas para Reir</li>
+                            <li>Policiales</li>
+                            <li>Romances</li>
+                            <li>Sci-fi</li>
+                            <li>Terror</li>
+                            <li>Tributo a la representacion inclusiva de la discapacidad</li>
+                        </ul>
+                    
+              
+
+            </section><!-- FILTRO DE BUSQUEDA-->
+
+
+            <section class="main__section"><!-- CATALOGO PELICULAS 1er NIVEL-->
+
+
+                <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie1.png" alt=""><!-- PELI 1 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                        <img src="./assets/images/Serie1.png" alt=""> <!-- CARD IMG -->
+                            <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                                <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                                <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                                <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                                <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                            </div>
+                            <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a> <!-- ESTE LINK ES PARA QUE EL CURSOR CAMBIE A DEDO -->
+                </div>
+
+                <div class="main__section__div">
+                   <a href=""> <img class="main__section__div__img" src="./assets/images/Serie2.png" alt=""> <!-- PELI 2 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie2.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div> 
+                    </a> 
+                </div>
+
+                <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie3.png" alt=""> <!-- PELI 3 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                        <img src="./assets/images/Serie3.png" alt=""> <!-- CARD IMG -->
+                        <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie4.png" alt=""> <!-- PELI 4 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie4.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Seria 5.png" alt=""> <!-- PELI 5 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Seria 5.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+
+         
+       <!-- CATALOGO PELICULAS 2do NIVEL-->
+                <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie 6.png" alt=""><!-- PELI 6 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie6.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a> 
+                </div>    
+            
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie 7.png" alt=""> <!-- PELI 7 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 7.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>      
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie 8.png" alt=""><!-- PELI 8 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 8.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a> 
+                </div>
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie9.png" alt=""> <!-- PELI 9 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie9.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                        </div>
+                        </a> 
+                </div>
+
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie 10.png" alt=""> <!-- PELI 10 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 10.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+
+                    </div>
+                    </a>
+                </div>
+           <!-- CATALOGO PELICULAS 3er NIVEL-->
+                
+                    
+           <div class="main__section__div">
+            <a href=""><img class="main__section__div__img" src="./assets/images/Serie 11.png" alt=""><!-- PELI 11 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 11.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+
+                    </div>
+                    </a> 
+                </div>
+
+         
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 12.png" alt=""> <!-- PELI 12 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 12.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+
+          
+                    <div class="main__section__div">
+                        <a href=""> <img class="main__section__div__img" src="./assets/images/Serie 13.png" alt=""> <!-- PELI 13 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 13.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                     </a>
+                </div>
+
+            
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 14.png" alt=""><!-- PELI 14 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 14.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a> 
+                </div>
+                    
+                    
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 15.png" alt=""> <!-- PELI 15 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 15.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+
+                    </div>
+                    </a>
+                </div>
+              
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 16.png" alt=""> <!-- PELI 16 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 16.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                     </a>
+                </div>
+                    
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 17.png" alt=""> <!-- PELI 17 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 17.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+                    
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 18.png" alt=""> <!-- PELI 18 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 18.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+                    
+                    <div class="main__section__div">
+                        <a href=""><img class="main__section__div__img" src="./assets/images/Serie 19.png" alt=""> <!-- PELI 19 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 19.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+                    
+                    <div class="main__section__div">
+                    <a href=""><img class="main__section__div__img" src="./assets/images/Serie 20.png" alt=""> <!-- PELI 20 -->
+                    <div class="main__section__div__backcard"> <!-- CARD -->
+                         <img src="./assets/images/Serie 20.png" alt=""> <!-- CARD IMG -->
+                         <div class="main__section__div__div2"> <!-- DIV CONTENEDOR ICONOS -->
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Icono - Play.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - SignoMas.png" alt="">
+                            <img class="main__section__div__div2__img-iconos" src="./assets/images/Iconos - dedo arriba.png" alt="">
+                            <img class="main__section__div__div2__img-iconos--despliegue" src="./assets/images/Iconos - Despliegue Abajo.png" alt="">  
+                        </div>
+                        <img class="main__section__div__div2__img-iconos--descripcion" src="./assets/images/Descripcion Cards.png" alt="">
+                    </div>
+                    </a>
+                </div>
+
+            </section>
+
+    </main>
+
+    <footer>
+      
+        <ul class="footer__listado">
+           
+            <li>Audio Descriptivo</li>
+            <li>Relaciones con Inversionistas</li>
+            <li>Avisos Legales</li>
+            <li>Centro de Ayuda</li>
+            <li>Empleo</li>
+            <li>Preferencias de Cookies</li>
+            <li>Tarjetas de Regalo</li>
+            <li>Terminos de Uso</li>
+            <li>Inofmracion Corporativa</li>
+            <li>Prensa</li>
+            <li>Privacidad</li>
+            <li>Contactenos</li>
+        </ul>
+
+    </footer>
+
+
+    
+</body>
+</html>
