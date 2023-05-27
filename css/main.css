@@ -14,7 +14,7 @@
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(8, 8, 8) 1%, rgb(56, 52, 52) 100%);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 0.2fr 2fr 4fr 1fr; /* CONTROL: HEADER - MAIN - FOOTER */
+    grid-template-rows: 0.2fr 2fr 0.5fr; /* CONTROL: HEADER - MAIN - FOOTER */
     padding: 5 0px;
     max-width: 100wh;
     margin: 0 auto;
@@ -29,7 +29,7 @@
   .header__div__logo {
     width: 100px;
     justify-self: center;
-    margin-left: 60px;
+    margin-left: 25px;
   }
   .header__div__usuario {
     display: flex;
@@ -57,6 +57,7 @@
     color: rgba(240, 248, 255, 0.829);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     transition: all 0.35s linear;
+    text-decoration: none;
   }
   .main {
     display: grid;
@@ -88,8 +89,8 @@
     grid-template-rows: 1fr;
     color: rgb(227, 228, 230);
     width: 660px;
-    left: 271px;
-    top: 155px;
+    left: 282px;
+    top: 95px;
     z-index: 3;
     font-size: 15px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -111,7 +112,7 @@
   }
   .main__section__h3 {
     font-size: 50px;
-    margin-left: 60px;
+    margin-left: 25px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: aliceblue;
     font-weight: 100;
@@ -205,21 +206,398 @@
     margin-left: 50px;
   }
 }
-@media (max-width: 600px) {
+/* Primer Capa Fullscreen */
+@media (max-width: 1400px) {
   .main__section {
     display: grid;
-    grid-template-columns: repeat(1, 0.5fr); /* CATALOGO PELICULAS */
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 0.15fr); /* CATALOGO PELICULAS */
+    grid-template-rows: repeat(5, 1fr);
     gap: 60px 5px;
-    justify-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 999px) {
+  .body {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(8, 8, 8) 1%, rgb(56, 52, 52) 100%);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.2fr 2fr 0.5fr; /* CONTROL: HEADER - MAIN - FOOTER */
+    padding: 5 0px;
+    max-width: 100wh;
+    margin: 0 auto;
+    padding: 5px 50px 0 50px;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 0.8fr 5fr 1.4fr;
+    grid-template-rows: 0.7fr; /* CONTROL HEADER (LOGO + MENU) */
+    align-items: center;
+  }
+  .header__div__logo {
+    width: 100px;
+    justify-self: center;
+    margin-left: 25px;
+  }
+  .header__div__usuario {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .header__div__usuario__h5 {
+    color: rgb(191, 193, 196);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+  }
+  .header__div__usuario__icono {
+    height: 18px;
+  }
+  .header__div__usuario__icono--avatar {
+    height: 30px;
+  }
+  .header__ul {
+    display: flex;
+    gap: 15px;
+    padding-left: 40px;
+  }
+  .header__ul__text {
+    font-size: 11px;
+    color: rgba(240, 248, 255, 0.829);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    transition: all 0.35s linear;
+    text-decoration: none;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.85fr 5fr; /* DIVISOR: FILTRO PELICULAS + GALERIA PELICULAS */
+  }
+  .main__section {
+    display: grid;
+    grid-template-columns: repeat(3, 0.15fr); /* CATALOGO PELICULAS */
+    grid-template-rows: repeat(4, 1fr);
+    gap: 60px 5px;
+    justify-content: center;
+  }
+  .main__section__filtropeliculas {
+    margin-bottom: 15px;
+    display: grid; /* CONTROL FILTRO PELICULAS */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.01fr 1fr;
+    gap: 0 20px;
+  }
+  .main__section__divh4 {
+    padding-top: 20px;
+    position: relative;
+    padding-left: 25px;
+  }
+  .main__section__divh4__listado {
+    position: absolute;
+    display: grid; /* CONTROL ORDEN LISTA DESPLEGABLE */
+    grid-template-columns: 1fr 1fr 2.6fr;
+    grid-template-rows: 1fr;
+    color: rgb(227, 228, 230);
+    width: 600px;
+    left: 70px;
+    top: 220px;
+    z-index: 3;
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.616);
+    gap: 5px 0;
+    border: 0.1px solid rgba(240, 248, 255, 0.103);
+    padding: 5px 5px 6px 6px;
+    display: none;
+  }
+  .main__section__div2h4 {
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    display: flex;
+    gap: 15px;
+    height: 25px;
+    width: 90px;
+    align-items: end;
+    padding-bottom: 3px;
+  }
+  .main__section__h3 {
+    font-size: 50px;
+    margin-left: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: aliceblue;
+    font-weight: 100;
+  }
+  .main__section__h4 {
+    justify-self: center;
+    color: aliceblue;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .main__section__h4-img {
+    width: 15px;
+    padding-bottom: 3px;
   }
   .main__section__div {
-    width: 400px;
-    height: 600px;
+    position: relative;
+    width: 240px;
+    height: 136px;
+    border-radius: 1rem;
   }
   .main__section__div__img {
-    width: 600px;
-    height: 600px;
+    position: relative;
+    width: 240px;
+    height: 135px;
+    opacity: 100%;
+    z-index: 1;
+  }
+  .main__section__div__backcard {
+    width: 245px;
+    height: 220px;
+    background-color: rgb(12, 11, 14);
+    z-index: 2;
+    position: absolute;
+    top: -45px;
+    transform: scale(0);
+    pointer-events: none;
+    transition: all 0.3s linear 0.7s;
+    background-color: rgb(22, 21, 21);
+    border-radius: 1rem;
+  }
+  .main__section__div__div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr; /* CONTROL CONTENINDO INFERIOR DE LAS TARJETAS */
+    grid-template-rows: 1fr;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .main__section__div__div2__img-iconos {
+    width: 25px;
+  }
+  .main__section__div__div2__img-iconos--despliegue {
+    justify-self: end;
+    width: 25px;
+    margin-right: 15px;
+  }
+  .main__section__div__div2__img-iconos--descripcion {
+    width: 170px;
+  }
+  .header__ul__text:hover {
+    color: rgba(201, 205, 207, 0.829);
+  }
+  #toggleCheckbox:checked + .main__section__divh4__listado {
+    display: grid;
+  }
+  .main__section__div2h4:hover {
+    background-color: rgb(37, 36, 36);
+  }
+  .main__section__div__img:hover + .main__section__div__backcard {
+    transform: scale(1.2);
+    opacity: 100%;
+    pointer-events: none;
+  }
+  .main__section__div__img:hover {
+    height: 179px;
+    transform: scale(1.16);
+    transition: all 0.2s linear 1s;
+  }
+  .main__section__div__img:not(hover) {
+    height: 135px;
+  }
+  .footer__listado {
+    color: rgb(170, 174, 179);
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 799px) {
+  /* TRAJE TODOS LOS GRID PARA TRABAJAR LA ESTRUCTURA DESDE ACA */
+  .body {
+    padding: 0;
+    display: grid; /* CONTROL: HEADER - MAIN - FOOTER */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.1fr 0.5fr 0.001fr;
+    background: black;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr; /* CONTROL HEADER (LOGO + MENU) */
+    box-shadow: inset 10px 0 0 0 black, inset -14px 0 0 0 black;
+  }
+  .header__div__logo {
+    margin-left: 0;
+  }
+  .header__ul {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .header__ul__text {
+    font-size: 15px;
+  }
+  .header__ul__text--respHidden {
+    font-size: 15px;
+    display: none;
+  }
+  .header__div__logo {
+    order: 1;
+    width: 200px;
+  }
+  .header__div__usuario {
+    order: 2;
+    justify-self: center;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.04fr 1fr; /* DIVISOR: FILTRO PELICULAS + GALERIA PELICULAS */
+  }
+  .main__section {
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr); /* CATALOGO PELICULAS */
+    grid-template-rows: repeat(10, 2fr);
+    justify-content: center;
+    gap: 20px 20px;
+  }
+  .main__section__h3 {
+    margin-left: 0;
+    justify-self: center;
+    order: 2;
+  }
+  .main__section__filtropeliculas {
+    justify-content: center;
+    display: grid; /* CONTROL FILTRO PELICULAS */
+    grid-template-columns: 0.01fr 0.01fr;
+    grid-template-rows: 1fr;
+  }
+  .main__section__divh4 {
+    justify-self: end;
+    order: 1;
+    padding-left: 0;
+  }
+  .main__section__divh4__listado {
+    display: grid; /* CONTROL ORDEN LISTA DESPLEGABLE */
+    grid-template-columns: 1fr;
+    grid-template-rows: 24fr;
+    display: none;
+    justify-self: center;
+    left: 102px;
+    top: 220px;
+    width: 400px;
+    position: static;
+  }
+  .main__section__div__div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr; /* CONTROL CONTENINDO INFERIOR DE LAS TARJETAS */
+    grid-template-rows: 1fr;
+  }
+  .footer__listado {
+    color: rgb(170, 174, 179);
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 599px) {
+  /* TRAJE TODOS LOS GRID PARA TRABAJAR LA ESTRUCTURA DESDE ACA */
+  .body {
+    padding: 0;
+    display: grid; /* CONTROL: HEADER - MAIN - FOOTER */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.1fr 0.5fr 0.001fr;
+    background: black;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr; /* CONTROL HEADER (LOGO + MENU) */
+    box-shadow: inset 10px 0 0 0 black, inset -14px 0 0 0 black;
+  }
+  .header__div__logo {
+    margin-left: 0;
+  }
+  .header__ul {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .header__ul__text {
+    font-size: 15px;
+  }
+  .header__ul__text--respHidden {
+    font-size: 15px;
+    display: none;
+    font-size: 15px;
+  }
+  .header__div__logo {
+    order: 1;
+    width: 200px;
+  }
+  .header__div__usuario {
+    order: 2;
+    justify-self: center;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.04fr 1fr; /* DIVISOR: FILTRO PELICULAS + GALERIA PELICULAS */
+  }
+  .main__section {
+    display: grid;
+    grid-template-columns: repeat(1, 0.01fr); /* CATALOGO PELICULAS */
+    grid-template-rows: repeat(20, 0.01fr);
+    justify-items: center;
+  }
+  .main__section__h3 {
+    margin-left: 0;
+    justify-self: center;
+    order: 2;
+  }
+  .main__section__filtropeliculas {
+    justify-content: center;
+    display: grid; /* CONTROL FILTRO PELICULAS */
+    grid-template-columns: 0.01fr 0.01fr;
+    grid-template-rows: 1fr;
+  }
+  .main__section__divh4 {
+    justify-self: end;
+    order: 1;
+    padding-left: 0;
+  }
+  .main__section__divh4__listado {
+    display: grid; /* CONTROL ORDEN LISTA DESPLEGABLE */
+    grid-template-rows: 24fr;
+    display: none;
+    justify-self: center;
+    width: 280px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    position: static;
+  }
+  .main__section__div__div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr; /* CONTROL CONTENINDO INFERIOR DE LAS TARJETAS */
+    grid-template-rows: 1fr;
+  }
+  .footer__listado {
+    color: rgb(170, 174, 179);
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 20px;
+    margin-top: 100px;
   }
 }
 

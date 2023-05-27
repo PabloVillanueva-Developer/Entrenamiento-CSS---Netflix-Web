@@ -1,0 +1,12 @@
+
+
+@media (max-width:1400px) {
+
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(4, 0.15fr); /* CATALOGO PELICULAS */
+    grid-template-rows: repeat(5, 1fr);
+    gap: 60px 5px;
+    justify-content: center;
+}
+}

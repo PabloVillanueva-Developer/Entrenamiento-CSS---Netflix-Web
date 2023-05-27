@@ -16,7 +16,7 @@
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(8, 8, 8) 1%, rgb(56, 52, 52) 100%);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 0.2fr 2fr 4fr 1fr; /* CONTROL: HEADER - MAIN - FOOTER */
+    grid-template-rows: 0.2fr 2fr 0.5fr; /* CONTROL: HEADER - MAIN - FOOTER */
     padding: 5 0px;
     max-width: 100wh;
     margin: 0 auto;
@@ -38,7 +38,7 @@
         &__div__logo {
             width: 100px;
             justify-self: center;
-            margin-left: 60px;
+            margin-left: 25px;
             
             
         }
@@ -80,6 +80,7 @@
         color: rgba(240, 248, 255, 0.829);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         transition: all 0.35s linear;
+        text-decoration: none;
         
     }
     
@@ -124,8 +125,8 @@
             grid-template-rows: 1fr;
             color: rgb(227, 228, 230);
             width: 660px;
-            left: 271px;
-            top: 155px;
+            left: 282px;
+            top: 95px;
             z-index: 3;
             font-size: 15px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -161,7 +162,7 @@
 
     &__h3 {
         font-size: 50px;
-        margin-left: 60px;
+        margin-left: 25px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: aliceblue;
         font-weight: 100;
@@ -327,38 +328,3 @@ transition: all 0.2s linear 1s;
 
 
 }
-
-@media (max-width:600px) {
-
-
-    
-    .main__section {
-        display: grid;
-        grid-template-columns: repeat(1, 0.5fr); /* CATALOGO PELICULAS */
-        grid-template-rows: repeat(10, 1fr);
-        gap: 60px 5px;
-        justify-items: center;
-
-        &__div {
-            width: 400px;
-            height: 600px;
-         
-
-            &__img {
-              
-                width: 600px    ;
-                height: 600px;
-                
-
-            }
-        }
-
-}
-}
-
-
-
-
- 
- 
-
