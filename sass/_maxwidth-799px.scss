@@ -1,84 +1,43 @@
 @media (max-width:799px) {
 
-    /* TRAJE TODOS LOS GRID PARA TRABAJAR LA ESTRUCTURA DESDE ACA */
-        
-        .body {
-            padding: 0;
-            display: grid;/* CONTROL: HEADER - MAIN - FOOTER */
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: 0.1fr 0.5fr 0.001fr; 
-      
-            background: black;
-            
-    }
-    
+  
     .header {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr 1fr 1fr; /* CONTROL HEADER (LOGO + MENU) */
-        box-shadow: inset 10px 0 0 0 black, inset -14px 0 0 0 black;
-
-
-        &__div__logo {
-            margin-left: 0;
-        }
-     
-      
     
         &__ul {
         
             order: 3;
             display: flex;
             justify-content: center;
-          
             padding-left: 0;
     
             &__text {
                 font-size: 15px;
-
-                
-    
-    
             }
 
             &__text--respHidden {
                 font-size: 15px;
-                display: none;
-              
-               
-        }
-    
-          
-    
-           
+                display: none;    
+            }
         }
     
         &__div__logo {
             order: 1;
             width: 200px;   
-    
         }
     
         &__div__usuario {
             order: 2;
             justify-self: center;
-    
         }
-     
     }
     
-
-   
-
-
     .main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.04fr 1fr; /* DIVISOR: FILTRO PELICULAS + GALERIA PELICULAS */
-      
-      
-    
-    
        }
     
     
@@ -87,7 +46,6 @@
         grid-template-columns: repeat(2, 0.1fr); /* CATALOGO PELICULAS */
         grid-template-rows: repeat(10, 2fr);
         justify-content: center;
-      
         gap: 20px 20px;
        
 
@@ -95,22 +53,15 @@
             margin-left: 0;
             justify-self: center;
             order: 2;
-         
-            
-          
         }
 
-
-       
-       
         &__filtropeliculas {
             justify-content: center;
             justify-self: center;
             display: grid; /* CONTROL FILTRO PELICULAS */
             grid-template-columns: 0.01fr 0.01fr;
             grid-template-rows: 1fr;
-            position: relative;
-            
+            position: relative; 
         }
     
         &__divh4 {   
@@ -128,22 +79,6 @@
                 left: 0px;
                 top: 48px;
                 width: 400px;
-              
-            }
-        }
-    
-        &__div {
-     
-            &__img {         
-            }
-    
-            &__backcard {
-            }
-        
-            &__div2 {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 4fr; /* CONTROL CONTENINDO INFERIOR DE LAS TARJETAS */
-                grid-template-rows: 1fr;    
             }
         }
     }
@@ -157,10 +92,8 @@
         grid-template-rows: repeat(12, 1fr);
         margin-bottom: 20px;
         margin-top: 100px;
-       
-    
-    }
-    }
+        }
+}
     
     
     

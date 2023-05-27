@@ -1,82 +1,5 @@
 
-@media (max-width:599px) {
-
-    /* TRAJE TODOS LOS GRID PARA TRABAJAR LA ESTRUCTURA DESDE ACA */
-        
-        .body {
-            padding: 0;
-            display: grid;/* CONTROL: HEADER - MAIN - FOOTER */
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: 0.1fr 0.5fr 0.001fr; 
-      
-            background: black;
-            
-    }
-    
-    .header {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr 1fr; /* CONTROL HEADER (LOGO + MENU) */
-        box-shadow: inset 10px 0 0 0 black, inset -14px 0 0 0 black;
-
-
-        &__div__logo {
-            margin-left: 0;
-        }
-     
-      
-    
-        &__ul {
-            order: 3;
-            display: flex;
-            justify-content: center;
-          
-            padding-left: 0;
-    
-            &__text {
-                font-size: 15px;
-
-                
-    
-    
-            }
-
-            &__text--respHidden {
-                font-size: 15px;
-                display: none;
-                font-size: 15px;
-               
-        }
-    
-          
-    
-           
-        }
-    
-        &__div__logo {
-            order: 1;
-            width: 200px;   
-    
-        }
-    
-        &__div__usuario {
-            order: 2;
-            justify-self: center;
-    
-        }
-     
-    }
-    
-    .main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.04fr 1fr; /* DIVISOR: FILTRO PELICULAS + GALERIA PELICULAS */
-      
-      
-    
-    
-       }
-    
+@media (max-width:599px) { 
     
     .main__section {
         display: grid;
@@ -85,32 +8,21 @@
         justify-items: center;
         position: relative;
         
-
         &__h3 {
             margin-left: 0;
             justify-self: center;
             align-self: center;
             order: 2;
             font-size: 35px;
-         
-            
-          
         }
 
-
-       
-       
         &__filtropeliculas {
             justify-content: center;
             justify-self: center;
             display: grid; /* CONTROL FILTRO PELICULAS */
             grid-template-columns:0.01fr 0.01fr 00.01fr;
             grid-template-rows: 1fr;
-            position: relative;
-        
-           
-            
-            
+            position: relative;   
         }
     
         &__divh4 {   
@@ -118,9 +30,7 @@
             order: 1;
             padding: 0;
             align-self: center;
-          
-         
-    
+
             &__listado {
                 display: grid; /* CONTROL ORDEN LISTA DESPLEGABLE */
                 grid-template-columns: 0.01fr;
@@ -132,40 +42,20 @@
                 left: 0px;
                 top: 70px;
                 order: 4;
-               
-               
             }
         }
     
         &__div {
-     
-            &__img {         
-            }
     
-            &__backcard {
-            }
-        
             &__div2 {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 4fr; /* CONTROL CONTENINDO INFERIOR DE LAS TARJETAS */
                 grid-template-rows: 1fr;    
             }
         }
-    }
-    
-    
-    .footer__listado {
-        color: rgb(170, 174, 179);
-        gap:   30px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-        margin-bottom: 20px;
-        margin-top: 100px;
-       
-    
-    }
-    }
+    }    
+
+}
     
     
     
