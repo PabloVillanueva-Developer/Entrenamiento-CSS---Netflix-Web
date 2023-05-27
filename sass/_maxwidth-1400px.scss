@@ -8,5 +8,13 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 60px 5px;
     justify-content: center;
+
+    &__divh4 {
+        
+        &__listado {
+            left: 236px;
+            top: 48px;
+        }
+    }
 }
 }

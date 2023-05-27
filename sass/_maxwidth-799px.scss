@@ -105,9 +105,11 @@
        
         &__filtropeliculas {
             justify-content: center;
+            justify-self: center;
             display: grid; /* CONTROL FILTRO PELICULAS */
             grid-template-columns: 0.01fr 0.01fr;
             grid-template-rows: 1fr;
+            position: relative;
             
         }
     
@@ -115,16 +117,18 @@
             justify-self: end;     
             order: 1;
             padding-left: 0;
+
             &__listado {
+                position: absolute;
                 display: grid; /* CONTROL ORDEN LISTA DESPLEGABLE */
                 grid-template-columns: 1fr;
                 grid-template-rows: 24fr;     
                 display: none;
                 justify-self: center;
-                left: 102px;
-                top: 220px;
+                left: 0px;
+                top: 48px;
                 width: 400px;
-                position: static;
+              
             }
         }
     

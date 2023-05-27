@@ -3,7 +3,7 @@
 .body {
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(8, 8, 8) 1%, rgb(56, 52, 52) 100%);
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 0.01fr);
     grid-template-rows: 0.2fr 2fr 0.5fr; /* CONTROL: HEADER - MAIN - FOOTER */
     padding: 5 0px;
     max-width: 100wh;
@@ -18,7 +18,7 @@
 
 .header {
     display: grid;
-    grid-template-columns: 0.8fr 5fr 1.4fr;
+    grid-template-columns: 0.8fr 5fr 0.01fr;
     grid-template-rows: 0.7fr; /* CONTROL HEADER (LOGO + MENU) */
     align-items: center;
     
@@ -33,13 +33,13 @@
 
         &__div__usuario {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
 
             &__h5 {
                 color: rgb(191, 193, 196);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 15px;
+                font-size: 13px;
                 
             }
 
@@ -64,7 +64,7 @@
   
 
     &__text {
-        font-size: 11px;
+        font-size: 10px;
         color: rgba(240, 248, 255, 0.829);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         transition: all 0.35s linear;
@@ -92,19 +92,23 @@
     justify-content: center;
 
     &__filtropeliculas {
-      
+        justify-self: start;
         margin-bottom: 15px;
         display: grid; /* CONTROL FILTRO PELICULAS */
         grid-template-columns: 1fr;
-        grid-template-rows: 0.01fr 1fr;
+        grid-template-rows: 0.5fr 0.01fr 1fr;
+        flex-direction: column;
         gap: 0 20px;
+        position: relative;
+       
+     
 
     }
 
     &__divh4 {
         padding-top: 20px;
-        position: relative;
         padding-left: 25px;
+
         
 
         &__listado {
@@ -114,8 +118,8 @@
             grid-template-rows: 1fr;
             color: rgb(227, 228, 230);
             width: 600px;
-            left: 70px;
-            top: 220px;
+            top: 102px;
+            left: 24px;
             z-index: 3;
             font-size: 15px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
