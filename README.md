@@ -6,3 +6,6 @@ practicar el uso de GRID de varios niveles para controlar toda la estructura y a
 
 This project has helped me to put into practice different Frontend techniques while cloning the Netflix website. It has been very 
 useful to practice the use of multi-level GRID to control the entire structure and at the same time combine Flex in the smaller levels.
+
+
+https://pablovillanueva-developer.github.io/Entrenamiento-HTML-CSS---Netflix-Web/
