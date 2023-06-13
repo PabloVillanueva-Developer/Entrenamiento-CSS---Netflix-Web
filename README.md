@@ -8,4 +8,4 @@ This project has helped me to put into practice different Frontend techniques wh
 useful to practice the use of multi-level GRID to control the entire structure and at the same time combine Flex in the smaller levels.
 
 
-https://pablovillanueva-developer.github.io/Entrenamiento-HTML-CSS---Netflix-Web/
+[https://pablovillanueva-developer.github.io/Entrenamiento-HTML-CSS---Netflix-Web/](url)
